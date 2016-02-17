@@ -26,6 +26,7 @@
     
     mtArr = [[DBGoods shareGoodsInfo]selectGoods];
     NSLog(@"我把FMDB增加到了Git库！");
+    NSLog(@"我了解工作区和Git库了！");
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
