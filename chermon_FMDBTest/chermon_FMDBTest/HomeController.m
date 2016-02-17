@@ -25,7 +25,7 @@
     tableView.dataSource =self;
     
     mtArr = [[DBGoods shareGoodsInfo]selectGoods];
-    
+    NSLog(@"我把FMDB增加到了Git库！");
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -47,6 +47,7 @@
     GoodsInfo *goodsInfo = [mtArr objectAtIndex:indexPath.row];
     cell.lbPrice.text = [NSString stringWithFormat:@"%.2f",goodsInfo.goods_price];
     cell.lbTitle.text = goodsInfo.goods_name;
+    
     [cell.imageLogo setImage:[UIImage imageNamed:goodsInfo.goods_logo]];
     
     return cell;
